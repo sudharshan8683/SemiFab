@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.pytest_cache/
+*.db
+backend/data/*.csv
+backend/app/ml/artifacts/*.joblib
+backend/app/ml/artifacts/*.json
+ml/processed/
+ml/models/
+ml/results/

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary antialiased min-h-screen relative selection:bg-brand/30 selection:text-white;
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.05), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(129, 140, 248, 0.05), transparent 25%);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+  .glass-panel {
+    @apply bg-surface backdrop-blur-xl border border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+}
+
